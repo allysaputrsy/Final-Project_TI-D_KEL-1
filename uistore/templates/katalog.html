@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/katalog.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/uistore-logo.png') }}" alt="">
+            </div>
+            <div class="navbar">'
+                <a href="/home">Home</a>
+                <a href="/katalog">Katalog</a>
+            </div>
+            <div class="sidenav">
+                <div class="profil">
+                    <a href="/profil">
+                    <div class="img" href="/profil/profil.html">
+                        <img src="{{ url_for('static', filename='images/profile-logo.png') }}" alt="">
+                        <p>{{ username }}</p>
+                    </div>
+                </a>
+                </div>
+                    <div class="sidebutton">
+                        <form action="/logout" method="post">
+                            <button type="submit">KELUAR</button>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="katalog-wrapper">
+        <div class="katalog">
+        {% for product in products %}
+        <div class="produk{{ loop.index }}">
+            <div class="produk">
+                <img src="{{ url_for('static', filename='images/produk' + loop.index|string + '.webp') }}" alt="Produk {{ loop.index }}">
+                <p style="font-size: 1.2rem;">{{ product.name }}</p>
+                <p style="color: darkgray; font-weight: 400;">{{ product.price }}</p>
+                <button>Beli</button>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+    
+</body>
+</html>

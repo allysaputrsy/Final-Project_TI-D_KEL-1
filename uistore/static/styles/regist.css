@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-image: url(/static/images/lgnregistbg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33rem;
+    height: 33rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17.7px 0px rgba(0, 0, 0, 0.20);
+    background: white;
+}
+
+.loginform{
+    margin: 3.56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform p{
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.34rem;
+}
+
+form input{
+    width: 27rem;
+    height: 4.2rem;
+    border-radius: 2.58963rem;
+    border: 2.59px solid #FFDE11;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+#username{
+    margin-top: 1.34rem;
+}
+
+
+
+.login-wrapper span a{
+    color: #FFDE11;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-wrapper img{
+    width: 18rem;
+    height: 6rem;
+    margin-bottom: 1.34rem;
+}
+
+button{
+    width: 27;
+    height: 4.2rem;
+    border-radius: 2.58963rem;
+    background: linear-gradient(91deg, #FFDE11 0%, #1C5E8D 100%);
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.34rem;
+}
+

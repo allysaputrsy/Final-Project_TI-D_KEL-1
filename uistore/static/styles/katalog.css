@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100vw;
+    height: 4.3rem;
+    background: #FFF;
+    box-shadow: 0px 4px 29.5px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 600;
+}
+
+.logo img{
+    width: 8rem;
+    height: 3rem;
+}
+
+.logo p{
+    padding: 0;
+    margin: 0;
+}
+
+.logreg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.logreg a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logreg a:hover{
+    color: black;
+}
+
+.logreg p{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar{
+    font-weight: 700;
+}
+
+.navbar a{
+    margin: 0 1.3rem;
+    color: black;
+}
+
+.img img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-image: url(/assets/profile-logo.png);
+    background-size: cover;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: black;
+}
+
+.sidebutton button{
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffdc01;
+    height: 2.2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.sidenav{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.bghome2{
+    position: absolute;
+    z-index: 999;
+    margin: auto;
+    scale: 80%;
+    top: 115.5px;
+    left: 400px;
+}
+
+.bghome{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+.profil{
+    cursor: pointer;
+}
+
+.produk1{
+    display: flex;
+    gap: 3rem;
+}
+
+.produk1 img{
+    background-size: cover;
+    margin: 1rem;
+    height: 225px;
+    width: 250px;
+    background-color: gray;
+    border-radius: 15px;
+    border-bottom: 1px solid #ffdc01;
+}
+
+.produk{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 29.5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.katalog{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.katalog-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+}
+
+.katalog-wrapper button{
+    border: none;
+    background-color: #ffdc01;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 25px;
+    width: 10rem;
+}
+
+.produk p{
+    font-weight: 600;
+}

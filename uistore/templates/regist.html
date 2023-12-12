@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/regist.css') }}">
+    <title>Masuk | UI Store</title>
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="loginform">
+            <img src="{{ url_for('static', filename='images/uistore-logo.png') }}" alt="Logo UIStore.">
+            <p>Sudah Punya Akun UISTORE? <span><a href="/uistore">Masuk</a></span></p>
+            <form action="">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <!--<div class="remember-me">
+                    <input type="checkbox" name="remember-me">
+                    <label for="remem"></label>
+                </div> !-->
+                <button type="submit">DAFTAR</button>
+            </form>
+            <p class="forgot">UISTORE©2023</p>
+        </div>
+    </div>
+    
+</body>
+</html>

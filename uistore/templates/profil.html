@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profil.css') }}">
+    <title>Profil | UISTORE</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assets/uistore-logo.png" alt="">
+            </div>
+            <div class="navbar">'
+                <a href="/home/home.html">Home</a>
+                <a href="">Katalog</a>
+            </div>
+            <div class="sidenav">
+                <div class="profil">
+                    <a href="/profil">
+                    <div class="img">
+                        <img src="/assets/profile-logo.png" alt="">
+                        <p>{{ username }}</p>
+                    </div>
+                </a>    
+                </div>
+                <div class="sidebutton">
+                    <form action="/logout" method="post">
+                        <button type="submit">KELUAR</button>
+                    </form>                        
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+    <div class="profilwrapper">
+        <h1>PROFIL</h1>
+        <img src="" alt="">
+        <div class="fotouser">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z"></path></svg>
+        </div>
+        <div class="namaprofil">
+            <p id="namaprofil">{{ username }}</p>
+        </div>
+        <div class="tanggal-lahir">
+            <p class="tanggallahir">Saldo Anda:</p>
+        </div>
+        <div class="saldo">
+            <p>{{ saldo }}</p>
+        </div>
+        <p>UISTORE2023</p>
+    </div>
+</div>  
+    
+</body>
+</html>
